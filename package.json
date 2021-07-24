@@ -4,5 +4,16 @@
   "author": {
     "name": "German Yukin",
     "email": "germanyukin@gmail.com"
+  },
+  "scripts": {
+    "eslint": "eslint \"./**/*.{js,mjs,cjs}\"",
+    "stylelint": "stylelint \"./src/**/*.css\""
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.7",
+    "eslint": "^7.31.0",
+    "eslint-plugin-import": "^2.23.4",
+    "stylelint": "^13.13.1",
+    "stylelint-order": "^4.1.0"
   }
 }
