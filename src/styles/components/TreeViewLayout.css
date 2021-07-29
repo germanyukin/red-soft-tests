@@ -1,0 +1,11 @@
+.TreeViewLayout {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 500px) {
+  .TreeViewLayout {
+    grid-template-columns: 50% 50%;
+  }
+}
