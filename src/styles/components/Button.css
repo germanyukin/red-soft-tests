@@ -1,0 +1,84 @@
+.Button {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  overflow: visible;
+  color: var(--text-color-primary);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  white-space: nowrap;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out,
+              box-shadow 0.2s ease-in-out;
+  appearance: button;
+  -moz-user-focus: ignore;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.Button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.Button:focus {
+  outline: 0;
+}
+
+.Button:hover {
+  text-decoration: none;
+}
+
+.Button:disabled,
+.Button--disabled,
+.Button[aria-disabled='true'],
+fieldset:disabled .Button {
+  cursor: default;
+  pointer-events: none;
+}
+
+.Button--stylePrimary {
+  color: var(--color-white);
+  background-color: var(--color-teal-500);
+  border-color: var(--color-teal-500);
+}
+
+.Button--stylePrimary:focus {
+  box-shadow: 0 0 0 3px var(--color-teal-500-30a);
+}
+
+.Button--stylePrimary:hover {
+  background-color: var(--color-teal-400);
+  border-color: var(--color-teal-400);
+}
+
+.Button--stylePrimary:active {
+  background-color: var(--color-teal-700);
+  border-color: var(--color-teal-700);
+}
+
+.Button--stylePrimary.Button--pressed,
+.Button--stylePrimary[aria-pressed='true'] {
+  background-color: var(--color-teal-700);
+  border-color: var(--color-teal-700);
+}
+
+.Button--stylePrimary:disabled,
+.Button--stylePrimary.Button--disabled,
+.Button--stylePrimary[aria-disabled='true'],
+fieldset:disabled .Button--stylePrimary {
+  color: var(--color-white);
+  background-color: var(--color-teal-500);
+  border-color: var(--color-teal-500);
+  opacity: 0.5;
+}
