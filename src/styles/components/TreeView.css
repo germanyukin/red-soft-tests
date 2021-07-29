@@ -1,0 +1,71 @@
+.TreeView {
+  position: relative;
+}
+
+.TreeView__group {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.TreeView__group .TreeView__group {
+  margin-left: 16px;
+  padding-left: 7px;
+  border-left: 1px solid var(--color-gray-300);
+}
+
+.TreeView__item.TreeView__item--drag {
+  opacity: 0.3;
+}
+
+.TreeView__item.TreeView__item--drop {
+  background-color: var(--color-orange-200);
+}
+
+.TreeView__name {
+  display: block;
+  width: 100%;
+  padding: 0 8px 0 calc(8px + 16px + 8px);
+  overflow: hidden;
+  line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-repeat: no-repeat;
+  background-position: center left 8px;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.TreeView__item--folder > .TreeView__name {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath fill="currentColor" d="M22,6H12l-2-2H2v16h20V6z"/%3e%3c/svg%3e');
+}
+
+.TreeView__item--file > .TreeView__name {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath fill="currentColor" d="M 6 2 C 4.9057453 2 4 2.9057453 4 4 L 4 20 C 4 21.094255 4.9057453 22 6 22 L 18 22 C 19.094255 22 20 21.094255 20 20 L 20 8 L 14 2 L 6 2 z M 6 4 L 13 4 L 13 9 L 18 9 L 18 20 L 6 20 L 6 4 z"/%3e%3c/svg%3e');
+}
+
+
+.TreeView__name::before {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  line-height: 2;
+  cursor: pointer;
+  content: '\00a0';
+  user-select: none;
+}
+
+.TreeView__name:hover::before {
+  background-color: var(--color-gray-200);
+}
+
+.Avatar {
+  position: absolute;
+  z-index: 9999;
+  padding: 0 8px;
+  line-height: 2;
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-300);
+}
