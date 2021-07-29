@@ -1,0 +1,24 @@
+.MainNav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.MainNav__item:hover {
+  background-color: var(--color-gray-100);
+}
+
+.MainNav__link {
+  display: block;
+  padding: 16px;
+  color: var(--color-teal-500);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.MainNav__link:hover,
+.MainNav__link:focus {
+  color: var(--color-teal-700);
+  background-color: var(--color-gray-100);
+}
