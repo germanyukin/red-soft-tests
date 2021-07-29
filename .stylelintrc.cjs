@@ -171,7 +171,7 @@ module.exports = {
     'selector-attribute-operator-space-before': 'never',
     // 'selector-attribute-operator-whitelist':,
     'selector-attribute-quotes': 'always',
-    'selector-class-pattern': '^[A-Z][a-zA-Z0-9]*(__[a-z0-9]+[a-zA-Z0-9]*)?(--[a-z0-9]+(-[a-zA-Z0-9]+)*)?$',
+    'selector-class-pattern': '^[A-Z][a-zA-Z0-9]*(__[a-z0-9]+[a-zA-Z0-9]*)?(--[a-z0-9]+[-a-zA-Z0-9]*)?$',
     // 'selector-combinator-allowed-list':,
     // 'selector-combinator-blacklist':,
     // 'selector-combinator-disallowed-list':,
