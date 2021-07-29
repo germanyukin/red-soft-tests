@@ -1,0 +1,23 @@
+.SelectedList {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.SelectedList__item {
+  padding: 8px 16px;
+  line-height: 1;
+}
+
+.SelectedList__item:hover {
+  background-color: var(--color-gray-100);
+}
+
+.SelectedList__item.SelectedList__item--selected {
+  background-color: var(--color-orange-300);
+}
+
+.SelectedList__item.SelectedList__item--selected:hover {
+  background-color: var(--color-orange-400);
+}
