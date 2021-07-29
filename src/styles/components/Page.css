@@ -1,0 +1,26 @@
+.Page {
+  height: 100%;
+}
+
+/**
+ * 1. Убираем значение `margin` для всех браузеров.
+ * 2. Предотвращаем корректировку размера шрифта после изменения
+ *    ориентации в iOS и IE на Windows Phone.
+ * 3. Изменяем подсветку тапа по умолчанию, чтобы она была полностью
+ *    прозрачной в iOS.
+ */
+.Page__body {
+  position: relative;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0; /* 1 */
+  color: var(--text-color-primary);
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+  background-color: var(--color-white);
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 3 */
+  -webkit-tap-highlight-color: transparent; /* 3 */
+}

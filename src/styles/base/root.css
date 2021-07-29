@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  /* Grayscale */
+  --color-gray-100: #eff2f6;
+  --color-gray-200: #e8ecf2;
+  --color-gray-300: #d6dde5;
+  --color-gray-400: #b9c1cc;
+  --color-gray-500: #afb9c7;
+  --color-gray-500-30a: rgba(175, 185, 199, 0.3);
+  --color-gray-600: #919ca9;
+  --color-gray-700: #68737f;
+  --color-gray-800: #38414c;
+  --color-gray-900: #282d37;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-30a: rgba(0, 0, 0, 0.3);
+  /* Orange */
+  --color-orange-50: #fef3e7;
+  --color-orange-100: #fee8d0;
+  --color-orange-200: #fddcb9;
+  --color-orange-300: #fdc68b;
+  --color-orange-400: #fcaf5c;
+  --color-orange-500: #fb982e;
+  --color-orange-600: #fb8200;
+  --color-orange-700: #ce6b00;
+  --color-orange-800: #a05300;
+  --color-orange-900: #733c00;
+  /* Teal */
+  --color-teal-50: #e8f5f5;
+  --color-teal-100: #d1ebec;
+  --color-teal-200: #bbe2e2;
+  --color-teal-300: #8dcfcf;
+  --color-teal-400: #60bcbc;
+  --color-teal-500: #33a9a9;
+  --color-teal-600: #069697;
+  --color-teal-700: #057b7c;
+  --color-teal-800: #046061;
+  --color-teal-900: #034545;
+
+  /* Text */
+  --text-color-primary: var(--color-gray-800);
+  --text-color-secondary: var(--color-gray-600);
+  /* stylelint-disable-next-line */
+  --font-family-sans-serif: system-ui, -apple-system, 'Helvetica Neue', Roboto, Arial, sans-serif;
+  /* stylelint-disable-next-line */
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-size-base: 1rem;
+  --font-weight-base: 400;
+  --line-height-base: 1.5;
+}
