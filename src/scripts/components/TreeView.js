@@ -127,7 +127,7 @@ export class TreeView extends Touch {
 
     if (!dragItem) return;
 
-    const dragParent = dragItem.closest(SELECTOR_ITEM_FOLDER);
+    const dragParent = dragItem.parentElement.closest(SELECTOR_ITEM_FOLDER);
 
     if (!dragParent) return;
 
